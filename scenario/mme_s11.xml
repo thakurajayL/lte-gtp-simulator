@@ -10,16 +10,16 @@
    <ie type="msisdn" instance="0" value="112233445566778"> </ie>
    <ie type="mei" instance="0" value="1122334455667788"> </ie>
    <ie type="uli" instance="0">
-      <param type="cgi" value="0x991199"> </param> 
-      <param type="rai" value="0x441144"> </param>
+      <param type="tai" value="0x02f8100001"> </param> 
+      <param type="evgi" value="0x02f81000e00000"> </param>
    </ie>
    <ie type="ambr" instance="0">
       <param type="ul" value="11223344"> </param> 
       <param type="dl" value="44332211"> </param>
    </ie>
    <ie type="serving_network" instance="0" value="112233"> </ie>
-   <ie type="apn" instance="0" value="mnc.112.mcc.223.gprs"> </ie>
-   <ie type="rat_type" instance="0" value="1"> </ie>
+   <ie type="apn" instance="0" value="0x08696e7465726e6574"> </ie>
+   <ie type="rat_type" instance="0" value="6"> </ie>
    <ie type="pdn_type" instance="0" value="ipv4"> </ie>
    <ie type="paa" instance="0" value="0x0100000000"> </ie>
    <!--
@@ -36,16 +36,16 @@
      <param type="ipv4" value="10.0.3.15"> </param>
    </ie>
    <ie type="bcontext" instance="0" count="1">
-      <ie type="ebi" instance="0" value="5"> </ie>
       <ie type="fteid" instance="0" value="0x86000000020a000210"> </ie>
-   </ie>
-   <ie type="bcontext" instance="0" count="1">
-      <ie type="ebi" instance="0" value="6"> </ie>
-      <ie type="fteid" instance="0">
-        <param type="iftype" value="11"> </param>
-        <param type="teid" value="1"> </param>
-        <param type="ipv4" value="192.168.1.1"> </param>
-      </ie>
+      <ie type="bearer_qos" instance="0">
+      <param type="arp" value="108"></param>
+      <param type="qci" value="9"></param>
+      <param type="mbrul" value="62724657408"></param>
+      <param type="mbrdl" value="62724657408"></param>
+      <param type="gbrul" value="00000000"></param>
+      <param type="gbrdl" value="00000000"></param>
+      </ie> 
+      <ie type="ebi" instance="0" value="5"> </ie>
    </ie>
   </send>
 
