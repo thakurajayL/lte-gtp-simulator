@@ -1109,28 +1109,28 @@ RETVAL GtpBearerQos::buildIe(IeParamLst *paramLst)
          GtpBitRate_t br = (GtpBitRate_t)gtpConvStrToU32(\
                (const S8*)param->buf.pVal, param->buf.len);
          GTP_ENC_BIT_RATE((m_val + 2), br);
-         this->m_hdr.len += 4;
+         this->m_hdr.len += 5;
       }
       else if (STRCASECMP(param->paramName, "mbrdl") == 0)
       {
          GtpBitRate_t br = (GtpBitRate_t)gtpConvStrToU32(\
                (const S8*)param->buf.pVal, param->buf.len);
-         GTP_ENC_BIT_RATE((m_val + 6), br);
-         this->m_hdr.len += 4;
+         GTP_ENC_BIT_RATE((m_val + 7), br);
+         this->m_hdr.len += 5;
       }
       else if (STRCASECMP(param->paramName, "gbrul") == 0)
       {
          GtpBitRate_t br = (GtpBitRate_t)gtpConvStrToU32(\
                (const S8*)param->buf.pVal, param->buf.len);
-         GTP_ENC_BIT_RATE((m_val + 10), br);
-         this->m_hdr.len += 4;
+         GTP_ENC_BIT_RATE((m_val + 12), br);
+         this->m_hdr.len += 5;
       }
       else if (STRCASECMP(param->paramName, "gbrdl") == 0)
       {
          GtpBitRate_t br = (GtpBitRate_t)gtpConvStrToU32(\
                (const S8*)param->buf.pVal, param->buf.len);
-         GTP_ENC_BIT_RATE((m_val + 14), br);
-         this->m_hdr.len += 4;
+         GTP_ENC_BIT_RATE((m_val + 17), br);
+         this->m_hdr.len += 5;
       }
       else
       {
