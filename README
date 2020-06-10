@@ -1,0 +1,6 @@
+Steps
+docker run -it ajaythakuronf/ltepktgen:latest bash
+cd lte-gtp-simulator
+ifconfig   #findout local ip address
+./build/gsim --node=mme --scenario=scenario/mme_s11.xml --iftype s11mme  --local-port 10000  --remote-port 2123  --num-sessions 1 --n3-requests 0 --remote-ip 192.168.84.79 --local-ip 172.17.0.2
+update local address & remote addres

@@ -11,7 +11,7 @@
    <ie type="mei" instance="0" value="1122334455667788"> </ie>
    <ie type="uli" instance="0">
       <param type="tai" value="0x02f8100001"> </param> 
-      <param type="evgi" value="0x02f81000e00000"> </param>
+      <param type="ecgi" value="0x02f81000e00000"> </param>
    </ie>
    <ie type="ambr" instance="0">
       <param type="ul" value="11223344"> </param> 
